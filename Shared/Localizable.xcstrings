@@ -1,0 +1,692 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "%lld°": {
+      "shouldTranslate": false
+    },
+    "%lld° %@": {
+      "shouldTranslate": false
+    },
+    "Allow location access in Settings to see the Qibla direction.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kıble yönünü görmek için Ayarlar'dan konum iznini açın."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اسمح بالوصول إلى الموقع من الإعدادات لعرض اتجاه القبلة."
+          }
+        }
+      }
+    },
+    "Back to my location": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العودة إلى موقعي"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konumuma dön"
+          }
+        }
+      }
+    },
+    "Compass": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "البوصلة"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pusula"
+          }
+        }
+      }
+    },
+    "Compass is being disturbed": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "البوصلة تتعرض للتشويش"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pusula etkileniyor"
+          }
+        }
+      }
+    },
+    "Face %lld° from north.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kuzeyden %lld° yöne dönün."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اتجه %lld° من الشمال."
+          }
+        }
+      }
+    },
+    "Finding your location…": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ تحديد موقعك…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konum bekleniyor…"
+          }
+        }
+      }
+    },
+    "Hide details": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إخفاء التفاصيل"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayrıntıları gizle"
+          }
+        }
+      }
+    },
+    "Kaaba": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الكعبة"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kâbe"
+          }
+        }
+      }
+    },
+    "Location Access Needed": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يلزم إذن الوصول إلى الموقع"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konum izni gerekli"
+          }
+        }
+      }
+    },
+    "Low compass accuracy": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "دقة البوصلة منخفضة"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pusula hassasiyeti düşük"
+          }
+        }
+      }
+    },
+    "Low location accuracy (±%@)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "دقة الموقع منخفضة (±%@)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konum hassasiyeti düşük (±%@)"
+          }
+        }
+      }
+    },
+    "Move away from metal or magnets.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Metal eşyalardan veya mıknatıslardan uzaklaşın."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ابتعد عن الأجسام المعدنية أو المغناطيس."
+          }
+        }
+      }
+    },
+    "Move your phone in a figure 8 a few times; the direction will correct itself.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حرّك الهاتف في الهواء على شكل الرقم 8 عدة مرات، وسيُصحَّح الاتجاه تلقائيًا."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Telefonu havada birkaç kez 8 çizerek hareket ettirin; yön kendiliğinden düzelir."
+          }
+        }
+      }
+    },
+    "Move your wrist in a figure 8.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bileğinizi havada 8 çizerek hareket ettirin."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حرّك معصمك في الهواء على شكل الرقم 8."
+          }
+        }
+      }
+    },
+    "Nearby metal objects, magnetic cases or electronics can throw off the direction. Move your phone a little away from them.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قد تتسبب الأجسام المعدنية القريبة أو الأغطية المغناطيسية أو الأجهزة الإلكترونية في انحراف الاتجاه. أبعِد الهاتف عنها قليلًا."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yakındaki metal eşyalar, mıknatıslı kılıflar ya da elektronik cihazlar yönü saptırabilir. Telefonu bunlardan biraz uzaklaştırın."
+          }
+        }
+      }
+    },
+    "North up": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الشمال للأعلى"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kuzey yukarı"
+          }
+        }
+      }
+    },
+    "Open Settings": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فتح الإعدادات"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayarları Aç"
+          }
+        }
+      }
+    },
+    "Preparing compass…": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جارٍ تجهيز البوصلة…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pusula hazırlanıyor…"
+          }
+        }
+      }
+    },
+    "Qibla": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "القبلة"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kıble"
+          }
+        }
+      }
+    },
+    "Show details": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عرض التفاصيل"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayrıntıları göster"
+          }
+        }
+      }
+    },
+    "Show the Kaaba": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عرض الكعبة"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kâbe'yi göster"
+          }
+        }
+      }
+    },
+    "The Qibla direction isn't affected; only your position on the map may be slightly off.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا يتأثر اتجاه القبلة بذلك؛ قد يكون موقعك على الخريطة منزاحًا قليلًا فقط."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kıble yönü bundan etkilenmez; yalnızca haritadaki konumunuz biraz kayabilir."
+          }
+        }
+      }
+    },
+    "The direction may be off by about %lld°. Moving to an open area or near a window helps.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قد ينحرف الاتجاه بنحو %lld°. يساعد الانتقال إلى مكان مفتوح أو بجوار نافذة."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yön yaklaşık %lld° sapabilir. Açık alana ya da pencere kenarına geçmek yardımcı olur."
+          }
+        }
+      }
+    },
+    "The map is fixed to north; the compass will turn back on once it's accurate again.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم تثبيت الخريطة باتجاه الشمال؛ ستعمل البوصلة تلقائيًا عند تحسّن دقتها."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Harita kuzeye sabitlendi; pusula düzelince kendiliğinden açılır."
+          }
+        }
+      }
+    },
+    "This device has no compass.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا تتوفر بوصلة في هذا الجهاز."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu cihazda pusula bulunmuyor."
+          }
+        }
+      }
+    },
+    "Turn %lld° left": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استدر %lld° إلى اليسار"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld° sola dönün"
+          }
+        }
+      }
+    },
+    "Turn %lld° right": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استدر %lld° إلى اليمين"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld° sağa dönün"
+          }
+        }
+      }
+    },
+    "Turn On Precise Location": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تفعيل الموقع الدقيق"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kesin Konumu Aç"
+          }
+        }
+      }
+    },
+    "We need access to your location to show the Qibla direction.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نحتاج إلى الوصول إلى موقعك لنتمكن من عرض اتجاه القبلة."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kıble yönünü gösterebilmek için konumunuza erişmemiz gerekiyor."
+          }
+        }
+      }
+    },
+    "You're facing the Qibla": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أنت متجه نحو القبلة"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kıbleye dönüksünüz"
+          }
+        }
+      }
+    },
+    "Your location is approximate (±%@)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "موقعك تقريبي (±%@)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konumunuz yaklaşık (±%@)"
+          }
+        }
+      }
+    },
+    "cardinal.e": {
+      "comment": "Doğu kısaltması",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "شرق"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "E"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "D"
+          }
+        }
+      }
+    },
+    "cardinal.n": {
+      "comment": "Kuzey kısaltması",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "شمال"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "N"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "K"
+          }
+        }
+      }
+    },
+    "cardinal.ne": {
+      "comment": "Kuzeydoğu kısaltması",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "شمال شرق"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NE"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "KD"
+          }
+        }
+      }
+    },
+    "cardinal.nw": {
+      "comment": "Kuzeybatı kısaltması",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "شمال غرب"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NW"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "KB"
+          }
+        }
+      }
+    },
+    "cardinal.s": {
+      "comment": "Güney kısaltması",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جنوب"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "S"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "G"
+          }
+        }
+      }
+    },
+    "cardinal.se": {
+      "comment": "Güneydoğu kısaltması",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جنوب شرق"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SE"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GD"
+          }
+        }
+      }
+    },
+    "cardinal.sw": {
+      "comment": "Güneybatı kısaltması",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جنوب غرب"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SW"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GB"
+          }
+        }
+      }
+    },
+    "cardinal.w": {
+      "comment": "Batı kısaltması",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "غرب"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "W"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "B"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
