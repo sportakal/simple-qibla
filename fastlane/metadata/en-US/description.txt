@@ -1,0 +1,22 @@
+Simplest Qibla Finder shows the Qibla direction the easiest way possible: on a real satellite map, with a clear line drawn from where you stand all the way to the Kaaba in Makkah.
+
+HOW IT WORKS
+• Open the app — your location and the Qibla line appear instantly.
+• Switch to compass mode and the map turns with your phone, so the line matches the real world around you.
+• Follow the "Turn right / Turn left" hint. When you face the Qibla, the arrow turns green and you feel a gentle vibration.
+
+SEE THE WHOLE WAY
+Tap one button to zoom out and see the full route from your city to the Kaaba.
+
+ACCURATE AND HONEST
+• Uses true north and the great-circle direction, the standard method for finding the Qibla.
+• Warns you when the compass is disturbed by metal or magnets, and tells you how to fix it.
+• Lets you know if your location is approximate and whether it affects the direction.
+
+APPLE WATCH
+A simple dial on your wrist shows the Qibla at a glance — no need to take out your phone.
+
+PRIVATE BY DESIGN
+No account, no ads, no tracking. Your location is used only on your device to calculate the direction.
+
+Available in English, Turkish and Arabic.

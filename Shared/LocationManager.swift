@@ -67,7 +67,15 @@ final class LocationManager: NSObject, CLLocationManagerDelegate {
         // Screenshot için: simülatörde pusula yok; `-DemoHeading <derece>` sabit bir yön verir.
         let demo = UserDefaults.standard.double(forKey: "DemoHeading")
         if demo != 0 {
-            heading = demo
+            // Gerçek pusula gibi sürekli yayınlanır; tek seferlik değer konumdan önce gelip kaçabilir.
+            Task { [weak self] in
+                var tick = false
+                while let self, !Task.isCancelled {
+                    self.heading = demo + (tick ? 0.01 : 0)
+                    tick.toggle()
+                    try? await Task.sleep(for: .seconds(0.5))
+                }
+            }
             return
         }
         #endif
