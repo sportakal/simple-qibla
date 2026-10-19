@@ -7,19 +7,19 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "محدد القبلة السهل"
+            "value" : "محدد القبلة"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Simplest Qibla Finder"
+            "value" : "Simple Qibla"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kolay Kıble Pusulası"
+            "value" : "Kolay Kıble"
           }
         }
       }

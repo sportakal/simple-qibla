@@ -13,7 +13,7 @@ Basit Kıble uygulaması: iOS uygulaması + ona gömülü watchOS uygulaması (S
 ## App Store Connect
 
 - Hesap: kişisel (`~/.appstoreconnect/sportakal.json`, takım `QHH678M674`).
-- Kayıt: **"Simplest Qibla Finder"**, Apple ID `6824687465`, primary locale `en-US`. ("Simple Qibla" ve "Simple Qibla Finder" adları alınmıştı.) Ana ekran adı (`CFBundleDisplayName`) da "Simplest Qibla Finder" (tr: "Kolay Kıble Pusulası", ar: "محدد القبلة السهل"); `INFOPLIST_KEY_CFBundleDisplayName` ve iki `InfoPlist.xcstrings` birlikte güncellenmeli.
+- Kayıt: **"Simplest Qibla Finder"**, Apple ID `6824687465`, primary locale `en-US`. ("Simple Qibla" ve "Simple Qibla Finder" adları alınmıştı.) Ana ekran adı (`CFBundleDisplayName`) ana ekranda kesilmesin diye en fazla 12 karakter: "Simple Qibla" (tr: "Kolay Kıble", ar: "محدد القبلة"); `INFOPLIST_KEY_CFBundleDisplayName` ve iki `InfoPlist.xcstrings` birlikte güncellenmeli.
 - Uygulama **yalnızca iPhone** (`TARGETED_DEVICE_FAMILY = 1`) + Apple Watch. iPad açılırsa Apple dört yönü de ister (multitasking) ve iPad screenshot'ları gerekir.
 - Her yüklemede `CURRENT_PROJECT_VERSION` (build) artırılmalı; dört build ayarında (iOS + Watch, Debug + Release) aynı değer olmalı.
 - Yükleme (API anahtarıyla):
