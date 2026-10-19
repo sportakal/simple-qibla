@@ -63,6 +63,14 @@ final class LocationManager: NSObject, CLLocationManagerDelegate {
     }
 
     func startHeading() {
+        #if DEBUG
+        // Screenshot için: simülatörde pusula yok; `-DemoHeading <derece>` sabit bir yön verir.
+        let demo = UserDefaults.standard.double(forKey: "DemoHeading")
+        if demo != 0 {
+            heading = demo
+            return
+        }
+        #endif
         guard CLLocationManager.headingAvailable() else { return }
         manager.startUpdatingHeading()
     }
