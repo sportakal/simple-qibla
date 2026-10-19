@@ -7,7 +7,7 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "أبسط محدد للقبلة"
+            "value" : "محدد القبلة السهل"
           }
         },
         "en" : {
@@ -19,7 +19,7 @@
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "En Basit Kıble Bulucu"
+            "value" : "Kolay Kıble Pusulası"
           }
         }
       }
