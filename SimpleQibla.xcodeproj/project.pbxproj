@@ -346,7 +346,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Simple Qibla";
+				INFOPLIST_KEY_CFBundleDisplayName = "Simplest Qibla Finder";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is used to calculate the Qibla direction and the distance to the Kaaba.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -378,7 +378,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Simple Qibla";
+				INFOPLIST_KEY_CFBundleDisplayName = "Simplest Qibla Finder";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is used to calculate the Qibla direction and the distance to the Kaaba.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -409,7 +409,7 @@
 				DEVELOPMENT_TEAM = QHH678M674;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Simple Qibla Finder";
+				INFOPLIST_KEY_CFBundleDisplayName = "Simplest Qibla Finder";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is used to calculate the Qibla direction and the distance to the Kaaba.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.sportakal.simpleQibla;
@@ -440,7 +440,7 @@
 				DEVELOPMENT_TEAM = QHH678M674;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Simple Qibla Finder";
+				INFOPLIST_KEY_CFBundleDisplayName = "Simplest Qibla Finder";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is used to calculate the Qibla direction and the distance to the Kaaba.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.sportakal.simpleQibla;

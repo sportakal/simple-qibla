@@ -7,19 +7,19 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "قبلة بسيطة"
+            "value" : "أبسط محدد للقبلة"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Simple Qibla"
+            "value" : "Simplest Qibla Finder"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Basit Kıble"
+            "value" : "En Basit Kıble Bulucu"
           }
         }
       }

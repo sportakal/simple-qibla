@@ -146,6 +146,17 @@ struct ContentView: View {
             guard let location, !didCenter else { return }
             didCenter = true
             setCamera(center: location.coordinate, distance: Self.closeDistance, animated: false)
+            #if DEBUG
+            // Screenshot için: `-DemoCompass YES` pusula moduna, `-DemoKaaba YES` Kâbe görünümüne geçer.
+            let defaults = UserDefaults.standard
+            if defaults.bool(forKey: "DemoCompass") { mode = .compass }
+            if defaults.bool(forKey: "DemoKaaba") {
+                Task {
+                    try? await Task.sleep(for: .seconds(1))
+                    fitKaaba()
+                }
+            }
+            #endif
         }
         .onChange(of: mode) { _, newMode in
             if newMode == .compass {
