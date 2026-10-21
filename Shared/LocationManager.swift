@@ -83,6 +83,17 @@ final class LocationManager: NSObject, CLLocationManagerDelegate {
         manager.startUpdatingHeading()
     }
 
+    #if os(iOS)
+    /// Pusula yönü ekranın üst kenarına göre hesaplanmalı. iPhone Duo'nun iç ekranı
+    /// desteklenen yönleri dikkate almaz; arayüz yatay da açılabilir.
+    func setHeadingOrientation(_ orientation: CLDeviceOrientation) {
+        guard manager.headingOrientation != orientation else { return }
+        manager.headingOrientation = orientation
+        // Eski yöne göre yumuşatılmış değer 90° geriden gelmesin.
+        smoothed = nil
+    }
+    #endif
+
     func stopHeading() {
         manager.stopUpdatingHeading()
         heading = nil

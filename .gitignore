@@ -6,3 +6,4 @@ build/
 
 # Screenshot çıktıları (yeniden üretilebilir, büyük)
 fastlane/screenshots/
+fastlane/screenshots_duo/

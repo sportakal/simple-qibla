@@ -97,6 +97,11 @@ struct ContentView: View {
     @State private var didCenter = false
     /// Bkz. `Qibla.isAligned(offset:wasAligned:)`.
     @State private var isAligned = false
+    /// iPhone Duo iç ekranında (ve geniş pencerelerde) `.regular` olur.
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+
+    /// Geniş ekranda kartlar bu genişliği aşmaz; harita görünür kalır.
+    private static let panelWidth: CGFloat = 420
 
     /// Bina ölçeğinde en yakın zoom (metre cinsinden kamera yüksekliği).
     static let closeDistance: Double = 250
@@ -108,20 +113,32 @@ struct ContentView: View {
         ZStack(alignment: .bottom) {
             map
 
-            VStack(spacing: 12) {
-                // Yön ipucu butonların solunda durur; böylece alttaki kartın yüksekliği
-                // değişmez ve butonlar kaymaz.
-                HStack(alignment: .bottom, spacing: 12) {
-                    if mode == .compass, let bearing {
-                        CompassHint(locator: locator, bearing: bearing, aligned: isAligned)
-                            .transition(.opacity.combined(with: .move(edge: .leading)))
+            Group {
+                if horizontalSizeClass == .regular {
+                    // Geniş ekran: kartlar solda dar bir sütunda, butonlar sağ kenarda.
+                    HStack(alignment: .bottom, spacing: 12) {
+                        VStack(alignment: .leading, spacing: 12) {
+                            hint
+                            infoCard
+                        }
+                        .frame(maxWidth: Self.panelWidth)
+                        Spacer(minLength: 0)
+                        controls
                     }
-                    Spacer(minLength: 0)
-                    controls
+                } else {
+                    VStack(spacing: 12) {
+                        // Yön ipucu butonların solunda durur; böylece alttaki kartın yüksekliği
+                        // değişmez ve butonlar kaymaz.
+                        HStack(alignment: .bottom, spacing: 12) {
+                            hint
+                            Spacer(minLength: 0)
+                            controls
+                        }
+                        infoCard
+                    }
                 }
-                .animation(.snappy, value: mode)
-                infoCard
             }
+            .animation(.snappy, value: mode)
             .padding(.horizontal, 16)
             .padding(.bottom, 8)
         }
@@ -130,9 +147,13 @@ struct ContentView: View {
                 CompassFollower(locator: locator, camera: camera, position: $position, bearing: bearing, isAligned: $isAligned)
             }
         }
+        .background {
+            InterfaceOrientationReader { locator.setHeadingOrientation($0) }
+        }
         .overlay(alignment: .top) {
             if mode == .compass {
                 CompassBanner(locator: locator)
+                    .frame(maxWidth: horizontalSizeClass == .regular ? 560 : .infinity)
                     .padding(.top, 8)
             }
         }
@@ -149,7 +170,13 @@ struct ContentView: View {
             #if DEBUG
             // Screenshot için: `-DemoCompass YES` pusula moduna, `-DemoKaaba YES` Kâbe görünümüne geçer.
             let defaults = UserDefaults.standard
-            if defaults.bool(forKey: "DemoCompass") { mode = .compass }
+            if defaults.bool(forKey: "DemoCompass") {
+                // Harita yeni kamerayı bildirmeden mod değişirse eski (geniş) görünüme döner.
+                Task {
+                    try? await Task.sleep(for: .seconds(0.5))
+                    mode = .compass
+                }
+            }
             if defaults.bool(forKey: "DemoKaaba") {
                 Task {
                     try? await Task.sleep(for: .seconds(1))
@@ -268,6 +295,14 @@ struct ContentView: View {
     }
 
     // MARK: - Arayüz
+
+    @ViewBuilder
+    private var hint: some View {
+        if mode == .compass, let bearing {
+            CompassHint(locator: locator, bearing: bearing, aligned: isAligned)
+                .transition(.opacity.combined(with: .move(edge: .leading)))
+        }
+    }
 
     private var controls: some View {
         VStack(spacing: 0) {
@@ -392,6 +427,49 @@ private struct CompassFollower: View {
         }
         let aligned = Qibla.isAligned(offset: Qibla.delta(bearing, heading), wasAligned: isAligned)
         if aligned != isAligned { isAligned = aligned }
+    }
+}
+
+/// Arayüzün o anki yönünü pusulaya bildirir. iPhone Duo'nun iç ekranı uygulamanın
+/// dikey kilidini dikkate almaz; yatay açıldığında yön buna göre düzeltilmezse
+/// harita ve ok 90° yanlış döner.
+private struct InterfaceOrientationReader: UIViewRepresentable {
+    let onChange: (CLDeviceOrientation) -> Void
+
+    func makeUIView(context: Context) -> ReaderView {
+        let view = ReaderView()
+        view.isUserInteractionEnabled = false
+        view.onChange = onChange
+        return view
+    }
+
+    func updateUIView(_ view: ReaderView, context: Context) {
+        view.onChange = onChange
+    }
+
+    final class ReaderView: UIView {
+        var onChange: ((CLDeviceOrientation) -> Void)?
+        private var observation: NSKeyValueObservation?
+
+        override func didMoveToWindow() {
+            super.didMoveToWindow()
+            // Ekran geometrisi değiştikçe (döndürme, açma/kapama) yeniden okunur.
+            observation = window?.windowScene?.observe(\.effectiveGeometry, options: [.initial, .new]) { [weak self] scene, _ in
+                let orientation = scene.effectiveGeometry.interfaceOrientation
+                MainActor.assumeIsolated { self?.report(orientation) }
+            }
+        }
+
+        private func report(_ orientation: UIInterfaceOrientation) {
+            // UIKit tanımı gereği arayüz yatay-sol iken cihaz yatay-sağdadır.
+            let device: CLDeviceOrientation = switch orientation {
+            case .portraitUpsideDown: .portraitUpsideDown
+            case .landscapeLeft: .landscapeRight
+            case .landscapeRight: .landscapeLeft
+            default: .portrait
+            }
+            onChange?(device)
+        }
     }
 }
 
