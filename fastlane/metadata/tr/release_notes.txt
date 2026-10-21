@@ -1,3 +1,2 @@
 • iPhone Duo desteği: Uygulama büyük iç ekrana her yönde tam oturuyor; kıble kartı ve düğmeler geniş ekrana göre yerleşiyor.
 • Pusula artık ekranın yönünü takip ediyor; uygulama yan çevrilmiş gösterilse bile harita ve ok doğru yönü gösteriyor.
-• Kıblesi çizgiyle birebir örtüşen camilerle yeni ekran görüntüleri.

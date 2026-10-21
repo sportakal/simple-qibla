@@ -1,3 +1,2 @@
 • iPhone Duo support: the app now fits the large inner display in any orientation, with the Qibla card and controls laid out for the wider screen.
 • The compass now follows the screen's orientation, so the map and arrow stay correct even when the app is shown sideways.
-• New screenshots featuring mosques whose prayer direction matches the Qibla line.
