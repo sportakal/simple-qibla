@@ -28,9 +28,10 @@ Basit Kıble uygulaması: iOS uygulaması + ona gömülü watchOS uygulaması (S
 ## Mağaza içeriği
 
 - Metinler: `fastlane/metadata/<en-US|tr|ar-SA>/` (git'te). Gizlilik/destek: depodaki `PRIVACY.md` ve `SUPPORT.md` (GitHub adresleri mağazada kayıtlı). Uygulama reklamsız ve takipsiz; App Privacy: "Data Not Collected".
+- İkon: `swift tools/make_icon.swift` (harita + konumdan Kâbe'ye kırmızı çizgi; açık/koyu/renklendirilmiş, saat ve launch logosu birlikte üretilir).
 - Screenshot'lar: `fastlane/screenshots/` (git dışı). Her dilde 4 iPhone (6.9", 1290×2796) + 2 Apple Watch; ayrıca 4 iPhone Duo iç ekran (2853×2007 yatay, ayrı klasörde, aşağıya bak).
   - Mekânlar, **ekseni hesaplanan kıbleyle örtüşen** camiler (OSM bina çizimlerinden ölçüldü): tr **Büyük Çamlıca Camii** (`41.034134,29.070432`, 151,87°), en **London Central Mosque** (`51.528846,-0.164756`, 118,97°), ar **Sultan Hasan Camii** şadırvanı (`30.032271,31.256208`, 136,17°). Klasik camilerin çoğu sapar (Sultanahmet ~18°, Süleymaniye ~14°, Ezher ~11°); onları kullanma, ekranda çizgi binayla çapraz durur.
-  - Debug açılış parametreleri: `-DemoHeading <derece>` (sabit pusula yönü; hizalı kare için kıble açısının kendisi, "dönün" karesi için 35° eksiği), `-DemoCompass YES`, `-DemoKaaba YES`; dil için `-AppleLanguages "(tr)"`. Konum: `xcrun simctl location <cihaz> set <lat,lon>`.
+  - Debug açılış parametreleri: `-DemoHeading <derece>` (sabit pusula yönü; hizalı kare için kıble açısının kendisi, "dönün" karesi için 35° eksiği), `-DemoCompass YES`, `-DemoKaaba YES`, `-showsSatellite YES|NO` (uydu / düz harita; 3. kare Kâbe görünümü düz haritada, diğerleri uydu); dil için `-AppleLanguages "(tr)"`. Konum: `xcrun simctl location <cihaz> set <lat,lon>`.
   - iPhone Duo simülatörü iOS 27.1 runtime ister. Açma/katlama yalnızca Device Hub arayüzünden yapılır (simctl'de komut yok); iç ekranı `xcrun simctl io <cihaz> screenshot --display=3` ile çek.
   - fastlane 2.228 Duo boyutlarını tanımaz; Duo seti (`fastlane/screenshots_duo/<dil>/`, git dışı) ASC API'sinde `APP_IPHONE_DUO` görüntü türüyle (Spaceship ile) ayrıca yüklenir. `fastlane/screenshots` içine Duo dosyası koyma, deliver reddeder.
   - Arapça saat ekranları için simülatörün sistem dili de Arapça olmalı, yoksa üstteki yazı saatle çakışır.
