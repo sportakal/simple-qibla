@@ -6,7 +6,7 @@ HOW IT WORKS
 • Follow the "Turn right / Turn left" hint. When you face the Qibla, the arrow turns green and you feel a gentle vibration.
 
 SEE THE WHOLE WAY
-Tap one button to zoom out and see the full route from your city to the Kaaba.
+Tap one button to zoom out and see the full route from your city to the Kaaba. Prefer a plain map? Switch between satellite imagery and a standard map anytime.
 
 ACCURATE AND HONEST
 • Uses true north and the great-circle direction, the standard method for finding the Qibla.

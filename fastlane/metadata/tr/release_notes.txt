@@ -1,2 +1,2 @@
-• iPhone Duo desteği: Uygulama büyük iç ekrana her yönde tam oturuyor; kıble kartı ve düğmeler geniş ekrana göre yerleşiyor.
-• Pusula artık ekranın yönünü takip ediyor; uygulama yan çevrilmiş gösterilse bile harita ve ok doğru yönü gösteriyor.
+• Yeni ikon: Uygulamanın kendisi gibi, harita üzerinde konumunuzdan Kâbe'ye uzanan kıble çizgisi.
+• Harita modu: Yeni düğmeyle uydu görüntüsü ile düz harita arasında geçiş yapabilirsiniz; seçiminiz hatırlanır.

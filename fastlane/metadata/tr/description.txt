@@ -6,7 +6,7 @@ NASIL ÇALIŞIR
 • "Sağa dönün / Sola dönün" ipucunu takip edin. Kıbleye döndüğünüzde ok yeşile döner ve hafif bir titreşim hissedersiniz.
 
 YOLUN TAMAMINI GÖRÜN
-Tek dokunuşla uzaklaşın, şehrinizden Kâbe'ye uzanan yolun tamamını görün.
+Tek dokunuşla uzaklaşın, şehrinizden Kâbe'ye uzanan yolun tamamını görün. Sade bir harita mı istersiniz? Uydu görüntüsü ile düz harita arasında dilediğiniz zaman geçiş yapın.
 
 DOĞRU VE ŞEFFAF
 • Gerçek kuzeyi ve büyük daire yönünü kullanır; kıble tayininde kullanılan standart yöntem.

@@ -183,6 +183,22 @@
         }
       }
     },
+    "Map": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خريطة"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Harita"
+          }
+        }
+      }
+    },
     "Move away from metal or magnets.": {
       "localizations": {
         "tr": {
@@ -307,6 +323,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kıble"
+          }
+        }
+      }
+    },
+    "Satellite": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "القمر الصناعي"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uydu"
           }
         }
       }

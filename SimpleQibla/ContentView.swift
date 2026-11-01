@@ -94,6 +94,8 @@ struct ContentView: View {
     @State private var camera = CameraState()
     @State private var position: MapCameraPosition = .userLocation(fallback: .automatic)
     @State private var mode: MapMode = .north
+    /// Uydu görüntüsü yerine düz harita; tercih saklanır.
+    @AppStorage("showsSatellite") private var showsSatellite = true
     @State private var didCenter = false
     /// Bkz. `Qibla.isAligned(offset:wasAligned:)`.
     @State private var isAligned = false
@@ -215,7 +217,9 @@ struct ContentView: View {
                 KaabaPin()
             }
         }
-        .mapStyle(.hybrid(elevation: .flat, pointsOfInterest: .excludingAll))
+        .mapStyle(showsSatellite
+                  ? .hybrid(elevation: .flat, pointsOfInterest: .excludingAll)
+                  : .standard(elevation: .flat, pointsOfInterest: .excludingAll))
         .mapControls {
             MapCompass()
             MapScaleView()
@@ -306,6 +310,16 @@ struct ContentView: View {
 
     private var controls: some View {
         VStack(spacing: 0) {
+            Button {
+                showsSatellite.toggle()
+            } label: {
+                Image(systemName: showsSatellite ? "globe.europe.africa.fill" : "map.fill")
+                    .font(.title3)
+                    .frame(width: 48, height: 48)
+                    .contentTransition(.symbolEffect(.replace))
+            }
+            .accessibilityLabel(showsSatellite ? "Satellite" : "Map")
+            Divider().frame(width: 48)
             Button {
                 mode = mode.next
             } label: {
